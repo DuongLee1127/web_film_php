@@ -1,0 +1,273 @@
+*{
+    color: rgb(172, 172, 172);
+}
+
+
+.content-table {
+    font-family: 'Raleway', serif;  
+    width: 100%; 
+    font-size: 16px;
+    text-align: center;
+}
+
+.content{
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.content .content-table, th, td {
+    border: 1px solid #dee2e6;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.content .content-table, td {
+    border: 1px solid #dee2e6;
+}
+.content .content-table th {
+    text-align: left;
+}
+
+.content-table td img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+}
+.content .content-add {
+    display: flex;
+    cursor: pointer;
+    padding: 10px 10px 10px 0;
+    color: var(--text-color);
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    background-color: #b71c1c;
+    width: 160px;
+    justify-content: center;
+    height: 40px;
+    border-radius: 4px;
+    margin: 5px 0 0;
+}
+.content .content-add:hover {
+    background-color: #263238;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.open {
+    display: flex;
+}
+
+.modal .modal-container {
+    position: relative;
+    background-color: var(--white-color);
+    width: 600px;
+    border-radius: 5px;
+    border-top: 2px solid var(--box-color);
+    animation: modalFadeIn ease 0.4s;
+    background-color: #263238;
+}
+
+.modal .modal-close {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+ .modal-close i{
+    color: #b71c1c;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.modal-close i:hover{
+    color: #abadad;
+
+}
+
+.modal .modal-close:hover {
+    opacity: 0.6;
+    transition: 0.6s all;
+}
+
+.modal .header-text {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-label {
+    display: block;
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.modal .modal-input {
+    display: block;
+    height: 40px;
+    width: 300px;
+    padding: 0 15px;
+    font-weight: 200;
+    color: #363636;
+    margin: 0 auto 20px;
+    border: 1px solid var(--box-color);
+    outline: none;
+}
+
+.modal .modal-file {
+    margin-bottom: 15px;
+}
+
+.modal .modal-add {
+    float: right;
+    font-size: 14px;
+    padding: 10px 20px; 
+    margin-bottom: 40px;
+    background-color: var(--white-color);
+    border: 1px solid var(--box-color);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #b71c1c;
+}
+
+.modal .modal-add:hover {
+    background-color: #abadad;
+    
+}
+
+.modal-fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-fix .modal-container {
+    position: relative;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius: 5px;
+    border-top: 2px solid var(--box-color);
+    animation: modalFadeIn ease 0.4s;
+    background-color: #263238;
+}
+
+.modal-fix .modal-close {
+    position: absolute;
+    right: 0;
+    color: var(--box-color);
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modal-fix .header-text {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-color);
+    font-style: italic;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-family: 'Tinos', serif;
+}
+
+.modal-fix .box-fix {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-fix .btn-fix {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0 30px;
+    min-width: 100px;
+    font-weight: 200;
+    text-align: center;
+    background-color: var(--white-color);
+    border: 1px solid var(--box-color);
+}
+
+.modal-fix .btn-fix:hover {
+    background-color: var(--hover-color);
+    transition: 0.4s all;
+}
+
+.modal-fix .modal-label {
+    display: block;
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.modal-fix .modal-input {
+    display: block;
+    height: 40px;
+    width: 300px;
+    padding: 0 15px;
+    font-weight: 200;
+    color: #363636;
+    margin: 0 auto 20px;
+    border: 1px solid var(--box-color);
+    outline: none;
+}
+
+.modal-fix .modal-file {
+    margin-bottom: 15px;
+}
+
+.modal-fix .fix-input {
+    float: right;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: var(--white-color);
+    border: 1px solid var(--box-color);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #b71c1c;
+}
+.fix-input:hover {
+    background-color: #abadad;
+}
+.modal-fix.open {
+    display: flex;
+}
