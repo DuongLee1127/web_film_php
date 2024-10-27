@@ -2,7 +2,7 @@
     class Model{
         public $conn;
         public function __construct(){
-            $this->conn = mysqli_connect('localhost', 'duong1', '12345678','webf');
+            $this->conn = mysqli_connect('localhost', 'helloworld', '12345678','webf');
         }
 
         public function getDataUser(){
